@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE bean PUBLIC "-//SPRING//DID BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-bean-2.0.dtd">
+
+
+<beans>
+
+    <bean id="triangle" class="com.abhinav.demo1.Triangle" />
+
+    <!--<constructor.arg index="0" value="Equilateral"/>
+        <constructor.arg index="1"value="20"/>-->
+
+    <!--<property name="pointA" ref="zeropoint" />
+    <property name="pointB" ref="point2" />
+    <property name="pointC" ref="point3" />-->
+
+    </bean>
+
+    <bean id="zeropoint" class="com.abhinav.demo1.Triangle">
+        <property name = "x" value="0" />
+        <property name = "y" value="0" />
+
+    </bean>
+
+    <bean id="center" class="com.abhinav.demo1.Triangle">
+    <!--<qualifier value="circleRelated" />-->
+        <property name = "x" value="20" />
+        <property name = "y" value="0" />
+
+    </bean>
+
+    <bean id="pointB" class="com.abhinav.demo1.Triangle">
+        <property name = "x" value="30" />
+        <property name = "y" value="0" />
+
+    </bean>
+
+    <bean id="pointC" class="com.abhinav.demo1.Triangle">
+         <property name = "x" value="30" />
+         <property name = "y" value="0" />
+
+    </bean>
+
+    <!--<bean id="circle" class="com.abhinav.demo1">
+    <property name="center" ref="ponitA" />
+    </bean>-->
+
+
+     <context:annotation-config/>
+
+     <context:component-scan base-package="com.abhinav.demo" />
+
+</beans>
+
+
